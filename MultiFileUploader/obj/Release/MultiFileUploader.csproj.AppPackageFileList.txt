@@ -1,0 +1,1 @@
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\bin\Release\app.publish\1.0.0.0\MultiFileUploader.app

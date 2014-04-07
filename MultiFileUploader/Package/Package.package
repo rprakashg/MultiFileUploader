@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="056b3ced-d7b9-4b6f-a863-30e4d55671e4" 
+        solutionId="056b3ced-d7b9-4b6f-a863-30e4d55671e4" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MultiFileUploader"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="f9ad0b36-5871-41b9-965a-03310404f223" />
+  </features>
+</package>

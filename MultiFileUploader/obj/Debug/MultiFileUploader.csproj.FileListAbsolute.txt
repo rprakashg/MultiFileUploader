@@ -1,0 +1,3 @@
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\bin\Debug\MultiFileUploader.pdb
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\obj\Debug\MultiFileUploader.dll
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\obj\Debug\MultiFileUploader.pdb

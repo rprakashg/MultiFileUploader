@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="056b3ced-d7b9-4b6f-a863-30e4d55671e4" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="MultiFileUploader_FileUploader\Feature.xml" />
+  </FeatureManifests>
+</Solution>

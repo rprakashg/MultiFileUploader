@@ -1,0 +1,3 @@
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\bin\Release\MultiFileUploader.pdb
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\obj\Release\MultiFileUploader.dll
+C:\GitHub Projects\MultiFileUploader\MultiFileUploader\obj\Release\MultiFileUploader.pdb

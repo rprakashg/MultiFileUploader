@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="8c5e6154-548d-4f8b-b8a3-c3ea2f1b4a91.UploadMultipleFilesAction"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Upload Multiple Files" 
+                HostWebDialog="true" 
+                HostWebDialogHeight="500" 
+                HostWebDialogWidth="600">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.New.Controls._children">
+          <Button Id="Ribbon.Documents.New.UploadMultipleFilesActionButton"
+                  Alt="Upload Multiple Files"
+                  Sequence="100"
+                  Command="Invoke_UploadMultipleFilesActionButtonRequest"
+                  LabelText="Upload Multiple Files"
+                  TemplateAlias="o1"
+                  Image32by32="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJoSURBVFhHYxgFIx4wQmmCoLn86VtdYy4mKJcosHvLx2u717/xv/XZ5A1UiHywbf2H/6QCkJ6jBz5fsdO5LAs1BgPgDQFDuYvOlS0yO7l4mIG8/8yMjIQD7NWL3wy/fvxnSMwWYdiz9RODZwA/w+ljX59X5t732HtO9xJUGXHARPGa69vXv6H+IQ7cuv79//FDX/7v3fbx/+Y176Gi//9fOPvlfYzXPVeo0XCA1UtmKpdCC6qkGn7/ZuAWFGKWZ2aBShAAj+79YrBz5WX4/PEfg5k1N8PkzpcMCspsDCysEGtOHP76ublPhg/MwQfcTW+mQh1OEgDF+bJ5b/4f3PMJKvL//+ljX/7/+vUPzN646v17qBVwQFKqJgYERgoyHN3/hWHT6g8M2zZ8ZHj18g/D2iUY9sIBUQ548+oPlEUYcHAwMZQ2SDB8+/qPwdWbj8ELmAj5BUGJGDsg6IAHd38y+NvfZqjIecLw4/s/qCh2wM3LxLB13QeGXVs+MfDyMTFsWfMBKoMbEHQAKBh1jbjAierSue9QUezAzpmXwTtIAOxrEM3BSTiACarIKhZjkJBkZXAApm6QI6gNiEoDtASjDhh1wKgDRh0wMhzw+dNfhts3fjC8fPYbKoIAdHHA/Ts/dnmZ3tRpr35pDxWCA6IcEBoryMADrGpJBY8e/PwHbB/+fv3qz4c7Xwyu3v+K2SglylRtfU4GNnbSHXD25Ne+WO9LMiuXP82ECmEArKb++v2P8e2bPwyUYkaG/1/vfrF+9eST1Tuo0RgAa6tYnv+koqgQrwqUSzb48ePvkyvPda9DuYMRMDAAAANUri7rlNgEAAAAAElFTkSuQmCC"
+                  Image16by16="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVDhPY6AzWMUMZcABI5SGglXMEgwqQnM3KJ6RlGLlYmJkZGBkYmBgAmKG/wwMz5/++cvG+i/SwUNwP0Q9mgGxgXd0qlukj7CyMvAzAjX/B2r69+8/mH7+9DcDLy8zg6Yu++9TJ77E2DsJrALpAZkNBlF+t+xK6yQPA23i//2bgeHXr/8Mv3//Z/j7l4Hh6cPfDHx8zAyiEiwMVy/+YP39k3EaVBvCAB4eNmZdAy4BJTV2BnUtDhQsKcPKICjMzPAC6AqQgUDvAd0EAXADYKCv5QXD1nUfoDwIkJBmBXqFgYEZGIQCgqjhiGGAniEXg6UdD5QHAfwCzAyKKuwM3DwYkYBpAKlgJBrw989/hi+f/uKORgkpVgY2NrQUDgXfv//7+/jhr0tRnvd0oEKoBnz7+o9BXZuDgYmZEcxGx18//zuW6HfH8u4X/VdQLYi8YK1+g1dZnU0RysUKvv/89231TpU7UC4QMDAAALWteLO0koVuAAAAAElFTkSuQmCC" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_UploadMultipleFilesActionButtonRequest"
+                          CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListId={SelectedListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>
