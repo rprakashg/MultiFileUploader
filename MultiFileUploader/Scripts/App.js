@@ -34,7 +34,6 @@ $(document).ready(function () {
     var ViewModel = function () {
         var self = this;
 
-        self.documentLibraries = ko.observableArray();
         self.files = ko.observableArray();
         self.addFile = function (file, id, data) {
             var token = file.split('\\');
