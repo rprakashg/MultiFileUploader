@@ -4,6 +4,7 @@ var hostweburl;
 var appweburl;
 var splistid;
 var id = 0;
+var ready = false;
 
 function getQueryStringParameter(paramToRetrieve) {
     var params = document.URL.split("?")[1].split("&");
@@ -156,7 +157,9 @@ $(document).ready(function () {
     var vm = new ViewModel();
 
     // Load the SP.RequestExecutor.js file.
-    $.getScript(hostweburl + "/_layouts/15/SP.RequestExecutor.js", vm.loadDocumentLibraries);
+    $.getScript(hostweburl + "/_layouts/15/SP.RequestExecutor.js", function () {
+        ready = true;
+    });
 
     $(function () {
         ko.applyBindings(vm);
